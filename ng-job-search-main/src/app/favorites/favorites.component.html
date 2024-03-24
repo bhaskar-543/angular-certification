@@ -1,0 +1,20 @@
+<table *ngIf="favoriteJobs$.length>0;else noData">
+    <tr class="center" *ngFor="let job of favoriteJobs$;">
+        <td style="max-width: 9%;" >
+            <span><img [src]="job['companyLogo']" class="icon"/></span>
+        </td>
+        <td style="min-width: 81%;max-width: 81%;" >
+            <div>
+               <a style="color: gray;" [routerLink]="['/favorites/'+job.id]"><strong>{{ job['title']}}</strong></a> 
+            </div>
+            <div class="line-height">
+                <small><span> Company: {{ job.companyName }} </span> &ensp;&nbsp;&nbsp;  <span> Reference: {{ job.reference }}</span></small>
+            </div>
+        </td>
+    </tr>
+</table>
+<ng-template #noData>
+    <div class="center nodata-div">
+        <span> No favorite selected</span>
+    </div>
+</ng-template>

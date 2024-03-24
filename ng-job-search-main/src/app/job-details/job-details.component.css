@@ -1,0 +1,44 @@
+.details-header{
+    padding: 1rem 0 0.5rem 0;
+    background: none;
+    border: 0;
+}
+
+.center {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.back-button{
+    color: black;
+    height: 3rem;
+    text-transform: capitalize;
+    background-color: var(--header-fore-color);
+    /* background: none; */
+}
+
+.logo {
+    width: 7rem;
+    height: 7rem;
+}
+
+.title{
+    color: gray;
+    font-size: xx-large;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.title-div {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.tags{
+    background-color: blue;
+    padding: 0 0.5rem 0 0.5rem;
+    border-radius: 25px;
+    font-size: small;
+}

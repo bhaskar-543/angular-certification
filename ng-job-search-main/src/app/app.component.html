@@ -1,0 +1,14 @@
+<div class="main-page">
+    <h1 class="header center">Find your job</h1>
+
+    <!-- Tab links -->
+    <div class="nav">
+        <ul>
+            <li><a class="center" [routerLink]="['/jobs']" routerLinkActive="activeroute"><b>JOBS</b></a></li>
+            <li><a class="center" [routerLink]="['/favorites']" routerLinkActive="activeroute"><b>FAVORITES</b></a></li>
+        </ul>
+    </div>
+
+
+    <router-outlet></router-outlet>
+</div>
