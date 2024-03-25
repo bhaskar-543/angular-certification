@@ -23,7 +23,7 @@ export class JobsComponent implements OnInit, OnDestroy {
   constructor(private jobSearchService:JobSearchService){ }
 
   ngOnInit(): void {
-    this.jobSearchService.allJobs$.subscribe((jobs:Job[]) =>{
+    this.jobSearchService.getJobs$.subscribe((jobs:Job[]) =>{
       this.all_jobs$ = jobs;
       for(let job of this.all_jobs$){
         this.fav_dictionary[job.id] = false;
@@ -48,10 +48,8 @@ export class JobsComponent implements OnInit, OnDestroy {
     this.fav_dictionary[jobId]= !this.fav_dictionary[jobId];
   }
 
-  error$ = new Subject<string>();
    
   ngOnDestroy(): void {
     this.jobSearchService.favorites$.next(this.favorites$);
-    console.log('---destroyed---');
   }
 }

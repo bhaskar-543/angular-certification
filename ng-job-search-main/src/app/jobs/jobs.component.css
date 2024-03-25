@@ -10,7 +10,7 @@ table {
 td {
     border: none;
     padding: 0;
-    color: gray;
+    color: black;
     background-color: transparent;
 }
 
@@ -31,4 +31,20 @@ td {
 
 .icon-star:hover {
     color: yellow;
+}
+
+@media screen and (max-width: 767px){
+    table tr, table.horizontal tr {
+        border: 0;
+        padding: 0 0 0 0;
+        margin: 0 0 0 0;
+        background-color: transparent;
+    }
+
+    table td, table.horizontal td {
+        text-align: left;
+    }
+    table {
+        display: grid;
+    }
 }

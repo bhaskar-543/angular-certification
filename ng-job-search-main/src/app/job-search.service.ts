@@ -9,12 +9,12 @@ import { JobDetails } from './_models/job-details.model';
 })
 export class JobSearchService {
 
-  allJobs$ = new BehaviorSubject<Job[]>([]);
+  // allJobs$ = new BehaviorSubject<Job[]>([]);
   favorites$ = new BehaviorSubject<Job[]>([]);
   constructor(private http: HttpClient) { 
-    this.http.get<Job[]>('/jobs').subscribe((data:Job[])=>{
-      this.allJobs$.next(data);
-    })
+    // this.http.get<Job[]>('/jobs').subscribe((data:Job[])=>{
+    //   this.allJobs$.next(data);
+    // })
   }
 
   getJobs$ = this.http.get<Job[]>('/jobs').pipe(

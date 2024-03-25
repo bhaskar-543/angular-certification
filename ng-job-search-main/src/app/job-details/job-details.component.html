@@ -9,24 +9,24 @@
 </header>
 <div class="title-div">
     <div>
-        <img [src]="selectedJob?.companyLogo" class="logo" />
+        <img [src]="selectedJob.companyLogo" class="logo" />
     </div>
     <div style="padding-left:0.5rem ;">
-        <div class="title">{{selectedJob.companyName}} - {{ selectedJob?.title }}</div>
+        <div class="title">{{selectedJob.companyName}} - {{ selectedJob.title }}</div>
         <div>
-            <span class="tags">{{ selectedJob?.types }}</span> &nbsp; <span class="tags">{{ selectedJob?.industries}}</span>
+            <span class="tags">{{ selectedJob.types }}</span> &nbsp; <span class="tags">{{ selectedJob.industries}}</span>
         </div>
     </div>
 </div>
-<section style="color: gray;">
+<section style="color: black;">
     <div>
-        <b>Publish date</b> :  {{ selectedJob?.publishDate | date:'shortDate'}}
+        <b>Publish date</b> :  {{ selectedJob.publishDate | date:'shortDate'}}
     </div>
     <div>
-        <b>Location</b> : {{ selectedJob?.location }}
+        <b>Location</b> : {{ selectedJob.location }}
     </div>
     <div>
-        <b>Reference</b> : {{ selectedJob?.reference }}
+        <b>Reference</b> : {{ selectedJob.reference }}
     </div>
     <div>
         <b>Description</b>: <span [innerHTML]="selectedJob.description"></span>

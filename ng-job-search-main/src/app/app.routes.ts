@@ -17,7 +17,7 @@ export const routes: Routes = [
         path:'favorites',component:FavoritesComponent
     },
     {
-        path:'',redirectTo:'jobs',pathMatch:'full'
+        path:'**',redirectTo:'jobs',pathMatch:'full'
     }
 
 ];

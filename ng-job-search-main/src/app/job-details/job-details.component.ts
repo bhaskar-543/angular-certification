@@ -14,7 +14,7 @@ import { CommonModule, Location } from '@angular/common';
 export class JobDetailsComponent implements OnInit{
 
   jobID :number = 0;
-  selectedJob !: JobDetails ;
+  selectedJob : JobDetails ={} as JobDetails ;
   constructor(private route:ActivatedRoute, private jobSearchService:JobSearchService, private _location: Location) {}
 
   public ngOnInit(): void {

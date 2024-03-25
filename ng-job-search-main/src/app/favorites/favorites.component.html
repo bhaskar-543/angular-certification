@@ -3,9 +3,9 @@
         <td style="max-width: 9%;" >
             <span><img [src]="job['companyLogo']" class="icon"/></span>
         </td>
-        <td style="min-width: 81%;max-width: 81%;" >
+        <td style="min-width: 91%;max-width: 91%;" >
             <div>
-               <a style="color: gray;" [routerLink]="['/favorites/'+job.id]"><strong>{{ job['title']}}</strong></a> 
+               <a style="color: black;" [routerLink]="['/favorites/'+job.id]"><strong>{{ job['title']}}</strong></a> 
             </div>
             <div class="line-height">
                 <small><span> Company: {{ job.companyName }} </span> &ensp;&nbsp;&nbsp;  <span> Reference: {{ job.reference }}</span></small>
