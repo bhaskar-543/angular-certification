@@ -12,7 +12,7 @@
             </div>
         </td>
         <td style="min-width: 10%;">
-            <div><span class="icon-star" [ngClass]="{'selected': fav_dictionary[job.id]}" (click)="addToFavorite(job.id)"></span></div>
+            <div><span [id]="'star-'+job.id" class="icon-star" [ngClass]="{'selected': fav_dictionary[job.id]}" (click)="addToFavorite(job.id)"></span></div>
         </td>
     </tr>
 </table>
